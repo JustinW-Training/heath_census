@@ -192,3 +192,65 @@ nav button:hover {
     width: 100%;
   }
 }
+
+/* ---------------------------------------
+   Contact Form Styling (Healthcare style)
+-----------------------------------------*/
+
+#contactForm {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 6px solid #2e8b57; /* groene healthcare lijn */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    text-align: left; 
+  }
+  
+  #contactForm div {
+    margin-bottom: 18px;
+  }
+  
+  #contactForm label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2e8b57; /* subtiele groene labelkleur */
+  }
+  
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #b7d9c6;
+    background: #f4fff7; /* heel lichte groene tint */
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s;
+  }
+  
+  #contactForm input:focus,
+  #contactForm textarea:focus {
+    border-color: #2e8b57;
+    box-shadow: 0 0 4px rgba(46, 139, 87, 0.4);
+  }
+  
+  #contactForm button {
+    background: #c0392b; /* rood accent */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.2s;
+    margin-top: 10px;
+  }
+  
+  #contactForm button:hover {
+    background: #a93226;
+  }
