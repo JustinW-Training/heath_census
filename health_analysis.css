@@ -1,0 +1,194 @@
+/* ------------------------------
+   Global Styles
+--------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #f8fdf8; /* heel lichte groen-witte tint */
+  color: #2d3a2d;      /* donker mosgroen voor tekst */
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Navigation Bar
+--------------------------------*/
+nav {
+  background: #2e8b57;  /* primair healthcare groen */
+  padding: 15px 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+  color: #eafff0; /* zachte mint tint */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #b3ffcc; /* mintgroene highlight */
+}
+
+nav input[type="text"] {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #98d6b1;
+  background: #eafff2;
+}
+
+nav button {
+  padding: 8px 15px;
+  background: #c0392b; /* rood accent */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+nav button:hover {
+  background: #a93226; /* iets donkerder rood */
+}
+
+/* ------------------------------
+   Main Container
+--------------------------------*/
+.container {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ------------------------------
+   Analysis Form
+--------------------------------*/
+.analysisForm {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  width: 60%;
+  border-left: 6px solid #2e8b57;  /* groen marker */
+}
+
+.analysisForm h1 {
+  margin-bottom: 20px;
+  color: #2e8b57; /* groentitel */
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.analysisForm div {
+  margin-bottom: 18px;
+}
+
+.analysisForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.analysisForm input[type="text"],
+.analysisForm input[type="number"],
+.analysisForm select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #badbc8;
+  background: #f4fff7;
+}
+
+/* Button for adding patients */
+#addPatient {
+  background: #2e8b57;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.2s;
+  margin: 15px 0;
+}
+
+#addPatient:hover {
+  background: #277549;
+}
+
+/* ------------------------------
+   Report Box
+--------------------------------*/
+#report {
+  margin-top: 15px;
+  background: #f0fff4;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #2e8b57;
+  min-height: 80px;
+}
+
+/* ------------------------------
+   Condition Search Panel
+--------------------------------*/
+.searchCondition {
+  width: 40%;
+}
+
+#result {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  min-height: 120px;
+  border-left: 6px solid #c0392b; /* rood accent */
+}
+
+/* ------------------------------
+   Responsive
+--------------------------------*/
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .analysisForm,
+  .searchCondition {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav input {
+    width: 100%;
+  }
+}
